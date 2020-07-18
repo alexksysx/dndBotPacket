@@ -2,6 +2,7 @@ package ru.alexksysx.dndpacket.packets;
 
 import ru.alexksysx.dndpacket.BotPacket;
 import ru.alexksysx.dndpacket.ClientIdentity;
+import ru.alexksysx.dndpacket.PacketType;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -19,8 +20,8 @@ public class AuthorizePacket implements BotPacket {
     }
 
     @Override
-    public short getId() {
-        return 0;
+    public int getId() {
+        return PacketType.AUTHORIZE.getValue();
     }
 
     @Override

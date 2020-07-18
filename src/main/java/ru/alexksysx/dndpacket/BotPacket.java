@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 public interface BotPacket {
-    short getId();
+    int getId();
 
     void writeData(DataOutputStream dataOutputStream) throws IOException;
 
