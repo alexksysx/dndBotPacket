@@ -5,13 +5,14 @@ import java.util.Map;
 
 public enum PacketType {
     AUTHORIZE(1),
-    PING(2);
+    JOIN(2),
+    LEAVE(3);
 
 
     private int value;
     private static Map map = new HashMap<>();
 
-    private PacketType (int value) {
+    PacketType(int value) {
         this.value = value;
     }
 
